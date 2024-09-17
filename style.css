@@ -1,0 +1,644 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: url(/imgs/headerImage.png)center no-repeat;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1000px;
+    position: relative;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 320px;
+}
+
+.menu {
+    margin-top: 20px;
+    display: flex;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 0px;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: 90%;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+}
+
+.list-item {
+    margin-right: 40px;
+    transition: .2s;
+}
+
+.list-item:hover {
+    transform: scale(1.2);
+}
+
+.banner {
+    position: absolute;
+    bottom: -3%;
+    left: 51%;
+    background-color: #F8F200;
+    width: 624px;
+    height: 369px;
+    clip-path: polygon(7.8% 0, 100% 0, 100% 86.5%, 92.2% 100%, 0 100%, 0 13.5%);
+    position: absolute;
+    bottom: 0px;
+}
+
+.banner-content {
+    padding: 30px 70px 70px 70px;
+}
+
+.banner-content h1 {
+    font-family: "M PLUS 1 Code", monospace;
+    font-size: 52px;
+    line-height: 63px;
+    font-weight: 800;
+}
+
+.banner-content a {
+    background-color: #000000;
+    color: #F8F200;
+    padding: 19px 50px 19px 50px;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.banner-content a:hover {
+    background-color: #c9c500;
+}
+
+.description-content h2 {
+    font-family: "M PLUS 1 Code", monospace;
+    font-size: 58px;
+    font-weight: 600;
+    margin-top: 70px;
+}
+
+.description-content p b {
+    color: #52BEDC;
+}
+
+.description-content p {
+    font-family: "Roboto";
+    color: #777;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 34px;
+    max-width: 952px;
+    margin-bottom: 70px;
+}
+
+.description-image {
+    display: flex;
+}
+
+.left-image-block {
+    margin-right: 32px;
+}
+
+.left-image-block img {
+    margin-bottom: 29px;
+}
+
+.draw {
+    background-color: #000000;
+    margin-top: 70px;
+}
+
+.draw_layer_top {
+    width: 100%;
+    height: 70px;
+}
+
+.draw-content img {
+    margin-top: 15px;
+}
+
+.draw-content {
+    position: relative;
+}
+
+.draw-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.draw-block h2 {
+    position: absolute;
+    top: 0;
+    left: 132px;
+    margin: 70px 0px 40px 32px;
+    color: #fff;
+    font-family: "M PLUS 1 Code", monospace;
+    font-size: 62px;
+    line-height: 64px;
+}
+
+.draw-block p {
+    max-width: 952px;
+    font-family: "Roboto";
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 34px;
+}
+
+.draw-block p b {
+    color: #52BEDC;
+}
+
+.draw_form {
+    max-width: 460px;
+    height: auto;
+    margin-top: 120px;
+    margin-bottom: 70px;
+}
+
+.form-group {
+    position: relative;
+    margin-top: 35px;
+}
+
+.form-input {
+    position: relative;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #777777;
+    outline: none;
+    padding-top: 10px;
+    color: #fff;
+    background-color: transparent;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+}
+
+.send {
+    max-width: 460px;
+    height: 120px;
+    border: 2px dashed #777777;
+    margin-top: 35px;
+}
+
+.send-input {
+    display: none;
+}
+
+.send-label {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: underline;
+    color: #FFFFFF;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 6;
+}
+
+.p-label {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -35px;
+    font-family: "Roboto";
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
+    letter-spacing: 0em;
+    color: #fff;
+}
+
+.form-button {
+    margin-top: 35px;
+}
+
+.submit-button {
+    background-color: #F8F200;
+    color: #000;
+    padding: 20px 50px 20px 50px;
+    border: none;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.submit-button:hover {
+    background-color: #c9c500;
+}
+
+.checkbox-input {
+    display: none;
+}
+
+.custom-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-color: transparent;
+    border: 1px solid #777777;
+    margin-top: 15px;
+}
+
+.checkbox-text {
+    position: relative;
+    bottom: 3px;
+    margin-left: 3px;
+    font-family: "Roboto";
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
+    letter-spacing: .05em;
+    color: #FFFFFF;
+}
+
+.custom-checkbox::before{
+    content: "";
+    display: block;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)scale(0);
+    background-image: url(/icons/checkMark.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 2px;
+}
+
+.checkbox-input:checked + .custom-checkbox::before{
+    transform: translate(-50%,-50%)scale(1);
+}
+
+.draw-console {
+    position: absolute;
+    top: 257px;
+    right: -150px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.xbox-block, .ps-block {
+    width: 460px;
+    height: 456px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.ps-block {
+    margin-left: -15%;
+}
+
+.xbox-block-layer {
+    background-image: url(/imgs/xboxBackLayer.png);
+    position: relative;
+    max-width: 460px;
+    height: 456px;
+}
+
+.ps-block-layer {
+    background-image: url(/imgs/psBackLayer.png);
+    position: relative;
+    max-width: 460px;
+    height: 456px;
+}
+
+.xbox-image, .ps-image {
+    margin-left: 164px;
+}
+
+.xbox-block {
+    z-index: 1;
+}
+
+.draw_bottom_layer{
+    width: 100%;
+    height: 70px;
+}
+
+.hp-monitor {
+    background-color: #F8F200;
+}
+
+.hp-monitor-content {
+    margin-top: 70px;
+}
+
+.hp-block {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.hp-block-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 26px;
+    margin-bottom: 70px;
+}
+
+.hp-block-right h1 {
+    font-family: "M PLUS 1 Code", monospace;
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 64px;
+    margin-bottom: 25px;
+    margin-top: 0px;
+}
+
+.hp-block-right p {
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 34px;
+}
+
+.hp-list {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    list-style: none;
+}
+
+.hp-item {
+    padding-bottom: 25px;
+}
+
+.hp-item:last-child{
+    padding-bottom: 0px;
+}
+
+.hp-icon {
+    position: absolute;
+}
+
+.hp-icon {
+    left: 5px;
+    width: 29px;
+    height: 29px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.icon-colors {
+    top: 0px;
+    background-image: url(/icons/colorsImage.svg);
+}
+
+.icon-stars {
+    top: 42px;
+    background-image: url(/icons/starsImage.svg);
+}
+
+.icon-square {
+    top: 82px;
+    background-image: url(/icons/squareImage.svg);
+}
+
+.hp-block-btn {
+    background-color: #000;
+    color: #F8F200;
+    padding: 20px 50px 20px 50px;
+    border: 0px;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.hp-block-btn:hover {
+    background-color: #c9c500;
+}
+
+.buy-game {
+    background-color: #000;
+}
+
+.castom-container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.buy-game-content {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 0;
+}
+
+.buy-game-img {
+    background-image: url(/imgs/buyGameImg.jpg);
+    width: 944px;
+    height: auto;
+    background-size: cover;
+}
+
+.buy-game-text h2 {
+    font-family: "M PLUS 1 Code", monospace;
+    color: #fff;
+    font-size: 52px;
+    font-weight: 400;
+}
+
+.block-list {
+    margin-top: 25px;
+}
+
+.block-list h3 {
+    margin: 0;
+    font-family: "Roboto";
+    color: #52BEDC;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.buy-list {
+    position: relative;
+    margin-top: 16px;
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 18px;
+    list-style: none;
+}
+
+.buy-item {
+    padding-bottom: 30px;
+}
+
+.buy-item:last-child{
+    padding-bottom: 0px;
+}
+
+.buy-icon {
+    position: absolute;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.disk-icon {
+    background-image: url(/icons/diskImg.svg);
+}
+
+.text-icon {
+    background-image: url(/icons/windowImg.svg);
+}
+
+.image-icon {
+    background-image: url(/icons/ImagesImg.svg);
+}
+
+.platform-block {
+    max-width: 319px;
+    height: auto;
+    margin-top: 75px;
+}
+
+.platforms h3 {
+    margin: 0;
+    color: #52BEDC;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.platforms-logo {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 84px;
+    row-gap: 48px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.platform-img {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.pc-logo {
+    width: 56px;
+    height: 32px;
+    background-image: url(/icons/pcImg.svg);
+}
+
+.xbox-logo {
+    width: 178px;
+    height: 36px;
+    background-image: url(/icons/xboxImg.svg);
+}
+
+.stadia-logo {
+    width: 58px;
+    height: 50px;
+    background-image: url(icons/stadiaImg.svg);
+}
+
+.ps4-logo {
+    width: 168px;
+    height: 35.19px;
+    background-image: url(icons/ps4Img.svg);
+}
+
+.footer-content {
+    display: flex;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.footer-logo {
+    display: flex;
+    gap: 32px;
+    padding-right: 395px;
+}
+
+.cyberpung-logo-footer {
+    width: 295px;
+    height: 73px;
+}
+
+.CdProjekt-logo-footer {
+    width: 172px;
+    height: 74px;
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+}
+
+.footer-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.footer-list-item {
+    padding-right: 32px;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer-list-item a {
+    text-decoration: none;
+    color: #000;
+    white-space: nowrap;
+}
+
+.footer-list-item:last-child {
+    padding-right: 0;
+}
+
+.end-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: #000;
+}
+
+.end-block p {
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+}
